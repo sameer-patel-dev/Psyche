@@ -1,0 +1,62 @@
+
+#banner{
+  background-image: linear-gradient(to right, #a517ba, #5f1782);
+  color: #fff;
+  padding-top: 5%;
+  outline: none !important;
+  border: none !important;
+}
+
+.promo-title{
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 45px;
+  text-align: center;
+  padding-bottom: 10px;
+  outline: none !important;
+  border: none !important;
+}
+
+.bottom-img{
+  width: 100%;
+  margin-top: 0px;
+  outline: none !important;
+  border: none !important;
+}
+
+.Home_column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.Home_row {
+  margin: 100px;
+}
+
+/* Clear floats after the columns */
+.Home_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .Home_column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.Home_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+

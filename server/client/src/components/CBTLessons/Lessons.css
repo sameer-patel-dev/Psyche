@@ -1,0 +1,28 @@
+.lessonBody {
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.lessonBody h3 {
+    font-size: 2.5em;
+}
+
+.lessonBody p {
+    font-size: 1.1em;
+    width: 52.5%;
+    line-height: 1.5;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+    background: #ebf5fc;
+    color: #404040;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.videoLesson {
+    width:952px;
+    height:536px;
+}
+
