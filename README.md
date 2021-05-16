@@ -1,1 +1,60 @@
-# Psyche-Mental-Health-Application
+# Psyche - Mental Health Application
+
+Psyche is an intelligent system which helps all school or college going adolescents deal with Exam Stress by exploring various mental disorder parameters and overcoming it by CBT technique and also creates an awareness by educating them about Cognitive Behavioural Therapy.
+
+## Features 
+
+### Student Module
+  - Cognitive Behavioral Therapy Lessons
+  - Cognitive Behavioral Therapy Exercises
+  - ASPMT Tests
+  - Automatic Thought Challenges
+  - Deep Breathing Therapy
+  - Virtual Psychiatrist Session
+  - Psychiatrist Session
+     
+### Psychiatrist Module
+  - Analyse ASPMT Tests
+  - Analyse Automatic Thought Challenges
+  - Schedule Student's Session
+        
+### Admin Module
+  - Add a Psychiatrist
+  - Assign a Psyhciatrist
+  - Monitor Session
+    
+   
+## Feature's UI
+
+### Student Module
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/1.png)
+
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/2.png)
+
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/3.png)
+
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/4.png)
+
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/5.png)
+
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/6.png)
+
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/7.png)
+
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/8.png)
+
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/9.png)
+
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/10.png)
+
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/11.png)
+
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/12.png)
+
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/13.png)
+
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/14.png)
+
+
+### Psychiatrist Module
+### Admin Module
