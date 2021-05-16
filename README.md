@@ -27,33 +27,21 @@ Psyche is an intelligent system which helps all school or college going adolesce
 ## Feature's UI
 
 ### Student Module
-![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/1.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/1.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/2.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/3.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/4.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/5.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/6.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/7.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/8.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/9.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/10.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/11.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/12.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/13.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/14.png)
 
-![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/2.png)
-
-![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/3.png)
-
-![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/4.png)
-
-![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/5.png)
-
-![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/6.png)
-
-![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/7.png)
-
-![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/8.png)
-
-![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/9.png)
-
-![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/10.png)
-
-![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/11.png)
-
-![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/12.png)
-
-![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/13.png)
-
-![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/14.png)
 
 
 ### Psychiatrist Module
