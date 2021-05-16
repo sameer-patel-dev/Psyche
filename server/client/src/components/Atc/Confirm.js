@@ -44,7 +44,50 @@ export class Confirm extends Component {
       values: { AutomaticThought, YourChallenge, AlternativeThought,  Feeling }
     } = this.props;
     return (
-    <div className="signin_new_body">
+      <div className="admin__container">
+      <div className="atc_charts">
+          
+          <div className="charts__left">
+              
+              <div>
+                    <h1>Take note of your emotions!</h1>
+                    <p> You will start to notice that distorted thoughts trigger negative emotions like guilt, sadness or anger. <br/>In time, you will see that being kind and fair to yourself results in more positive emotions. </p>
+
+                    <br></br><br></br>
+                    
+                    <h4>Your Automatic Thought</h4>
+                    <p> {AutomaticThought} </p>
+                    <br></br>
+
+                    <h4>Your Challenge</h4>
+                    <p> {YourChallenge}  </p>
+                    <br></br>
+
+                    <h4>Your Alternative Thought</h4>
+                    <p> {AlternativeThought} </p>
+                    <br></br>
+
+                    <h4>Your Feelings</h4>
+                    <p> {Feeling} </p>
+                    <br></br>
+
+          
+                        <br></br>
+                      <button className="signin_button" onClick={this.submit} >Submit</button>
+              </div>
+
+          </div>
+
+      </div>
+    </div>
+    );
+  }
+}
+
+export default Confirm;
+
+
+{/* <div className="signin_new_body">
           <div className="container signin_container" id="container">
               <div className="signin_form-container signin_sign-up-container">
                   <div className="signin_form">
@@ -92,9 +135,4 @@ export class Confirm extends Component {
                   </div>
               </div>
           </div>
-        </div>
-    );
-  }
-}
-
-export default Confirm;
+        </div> */}

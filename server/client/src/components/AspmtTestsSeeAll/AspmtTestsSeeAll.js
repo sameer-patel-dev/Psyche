@@ -32,7 +32,7 @@ const AspmtTestsSeeAll = ()=> {
                                 <div className="charts__right__title">
                                     <div>
                                         <h1>Student Name : {item.takenBy.name}</h1>
-                                        <h1>Student Test Score : {item.score}</h1>
+                                        <h3>Student Test Score : {item.score}</h3>
                                     </div>
                                     <i className="fa fa-usd" aria-hidden="true"></i>
                                 </div>

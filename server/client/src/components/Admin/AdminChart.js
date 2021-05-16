@@ -7,7 +7,13 @@ import {
   YAxis,
   VerticalGridLines,
   HorizontalGridLines,
+  LineMarkSeries,
+  FlexibleXYPlot
 } from "react-vis";
+
+import {AutoSizer, List} from 'react-virtualized';
+import 'react-virtualized/styles.css';
+
 
 const Chart = () => {
   const data1 = [
@@ -54,17 +60,32 @@ const Chart = () => {
     { x: 19, y: 12 }
   ];
   return (
-    <div style={{ marginTop: "15px" }}>
-      <XYPlot height={400} width={800}>
-        <VerticalGridLines />
-        <HorizontalGridLines />
-        <XAxis title="Weeks" />
-        <YAxis title="Users" />
-        <LineSeries data={data1} color="blue" />
+    <main>
+    <div style={{height: "500px", width:"1350px"}}>
+    <div style={{ height:'100%',width:'100%' }}>
 
-        <LineSeries data={data2} color="yellow" />
-      </XYPlot>
+  <AutoSizer>
+      {({ height, width }) => (
+        <FlexibleXYPlot height={height} width={width} xType="ordinal" yDomain={[0, 54]}>
+            <VerticalGridLines />
+            <HorizontalGridLines />
+            <XAxis title="Weeks" />
+            <YAxis title="Users" />
+            <LineMarkSeries data={data1} color="blue" />
+            <LineMarkSeries data={data2} color="yellow" />
+        </FlexibleXYPlot>
+        )}
+    </AutoSizer>
+
+    <div className="graphInfo">
+              <div className="colorBox1"></div>
+              <p>Total Number of Users in the system</p>
+              <div className="colorBox2"></div>
+              <p>Number of Active Users in the system</p>
+            </div>
     </div>
+    </div>
+    </main>
   );
 };
 

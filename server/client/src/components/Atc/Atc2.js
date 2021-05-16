@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-
+import "./Atc.css";
 
 export class Atc2 extends Component {
   continue = e => {
@@ -16,7 +16,38 @@ export class Atc2 extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
-      <div className="signin_new_body">
+      <div className="admin__container">
+          <div className="atc_charts">
+              
+              <div className="charts__left">
+                  
+                  <div>
+                        <h1>Your Challenge to the Thought!</h1>
+                        <p> When you have a distorted thought, ask yourself “is this accurate?”. If a friend said this about himself, what would you say? You would probably offer a counter-argument. <br /><br /> Challenge yourself in the same way. Think of a more balanced and realistic thought to take the place of the distortion. </p>
+
+                        <div className="formm">
+                        <div>
+                            <textarea className="inputtt" type="text" placeholder="Enter your challenge to your thought..." value={values.YourChallenge} onChange={handleChange('YourChallenge')} />
+                            <br></br><br></br>
+                            <button className="signin_button" onClick={this.continue} >Next</button><br></br>
+                        </div>
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div>
+        </div>
+    );
+  }
+}
+
+export default Atc2;
+
+
+
+{/* <div className="signin_new_body">
       <div className="container signin_container" id="container">
           <div className="signin_form-container signin_sign-up-container">
               <div className="signin_form">
@@ -57,9 +88,4 @@ export class Atc2 extends Component {
               </div>
           </div>
       </div>
-      </div>
-    );
-  }
-}
-
-export default Atc2;
+      </div> */}

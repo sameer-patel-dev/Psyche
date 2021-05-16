@@ -1,55 +1,34 @@
 import React from 'react'
-import image1 from '../../images/idCard.png'
-import wave from '../../images/wave.png'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import man from '../../images/man.png'
+import {Link} from 'react-router-dom';
+import elements from '../../images/elements.png'
 import './Home.css'
-import img1 from './1.png';
-import img2 from './2.jpg';
-import img3 from './3.png';
-import img4 from './4.png';
 
 
 const Home = ()=> {
     return (
         <div>
-            <section id="banner">
-                <div className="container">
-                    <p style = {{textAlign:"center", marginTop: "70px"}}><FontAwesomeIcon icon="user-nurse" size="5x" /></p>
-                    <p className="promo-title">PSYCHE</p>
-                    <h3 style = {{textAlign:"center"}}>MENTAL HEALTH APPLICATION FOR STUDENTS HAVING EXAM STRESS WITH CBT EXPERTISE VIRTUAL ASSISTANT</h3>
-                    <div class="Home_row">
-                        <div class="Home_column">
-                            <div class="Home_card">
-                            <h3>Cognitive Behavioral Therapy</h3>
-                            <img src={img1} height="260" width="260"></img>
-                            </div>
-                        </div>
-
-                        <div class="Home_column">
-                            <div class="Home_card">
-                            <h3>Integrated Virtual Assistant</h3>
-                            <img src={img2} height="260" width="260"></img>
-                            </div>
-                        </div>
-                        
-                        <div class="Home_column">
-                            <div class="Home_card">
-                            <h3>Personalized Dashboard</h3>
-                            <img src={img3} height="260" width="300"></img>
-                            </div>
-                        </div>
-                        
-                        <div class="Home_column">
-                            <div class="Home_card">
-                            <h3>Mental Health Exercises</h3>
-                            <img src={img4} height="260" width="260"></img>
-                            </div>
-                        </div>
-                    </div>
+        <div className="hero">
+            <nav></nav>
+            <div className="row">
+                <div className="col-1">
+                    <img src={man} ></img>
+                    <img src={elements} className="elements"></img>
                 </div>
-                
-            </section>
-            
+
+                <div className="col-2">
+                    <h1> Psyche <br></br><span className="spann">Mental Health Application</span></h1>
+                    <p> An initiative for Final year Project, Psyche, which is a mental health application based on Cognitive Behavorial Therapy for Students dealing with Exam Stress. </p>
+                     <a class="btn">Contact Us</a>
+                </div>
+            </div>
+
+            <div className="container">
+                <div className="lines">
+                    <div className="circle"></div>
+                </div>
+            </div>
+        </div>
         </div>
     )
 }

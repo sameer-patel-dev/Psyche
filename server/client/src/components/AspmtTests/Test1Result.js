@@ -101,13 +101,13 @@ export const Test1Result = [
     },
     {
         id: 20,
-        result: `Depression Severity: Severe`,
-        info: `You need immediate initiation of pharmacotherapy and, if still there is severe impairment or poor response to therapy, you must speed up the process of consulting a mental health specialist for psychotherapy and/or colloborative management.`
+        result: `Depression Severity: Moderately Severe`,
+        info: `This score suggests that you should immediately go for depression treatment. You should immediately contact a psychiatrist through our platform and have counselling.`
     },
     {
         id: 21,
-        result: `Depression Severity: Severe`,
-        info: `You need immediate initiation of pharmacotherapy and, if still there is severe impairment or poor response to therapy, you must speed up the process of consulting a mental health specialist for psychotherapy and/or colloborative management.`
+        result: `Depression Severity: Moderately Severe`,
+        info: `This score suggests that you should immediately go for depression treatment. You should immediately contact a psychiatrist through our platform and have counselling.`
     },
     {
         id: 22,
@@ -136,6 +136,21 @@ export const Test1Result = [
     },
     {
         id: 27,
+        result: `Depression Severity: Severe`,
+        info: `You need immediate initiation of pharmacotherapy and, if still there is severe impairment or poor response to therapy, you must speed up the process of consulting a mental health specialist for psychotherapy and/or colloborative management.`
+    },
+    {
+        id: 28,
+        result: `Depression Severity: Severe`,
+        info: `You need immediate initiation of pharmacotherapy and, if still there is severe impairment or poor response to therapy, you must speed up the process of consulting a mental health specialist for psychotherapy and/or colloborative management.`
+    },
+    {
+        id: 29,
+        result: `Depression Severity: Severe`,
+        info: `You need immediate initiation of pharmacotherapy and, if still there is severe impairment or poor response to therapy, you must speed up the process of consulting a mental health specialist for psychotherapy and/or colloborative management.`
+    },
+    {
+        id: 30,
         result: `Depression Severity: Severe`,
         info: `You need immediate initiation of pharmacotherapy and, if still there is severe impairment or poor response to therapy, you must speed up the process of consulting a mental health specialist for psychotherapy and/or colloborative management.`
     }

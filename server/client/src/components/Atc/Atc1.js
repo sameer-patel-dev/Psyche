@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link, useHistory} from 'react-router-dom';
 import {UserContext} from '../../App'
+import "./Atc.css";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 export class Atc1 extends Component {
@@ -12,7 +13,40 @@ export class Atc1 extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
-          <div className="signin_new_body">
+        <div className="admin__container">
+          <div className="atc_charts">
+              
+              <div className="charts__left">
+                  
+                  <div>
+                        <h1>Automatic Thought Challenge!</h1>
+                        <p> In your current capacity, what are the first immediate thoughts that are coming to your mind. <br /><br /> Automatic Thoughts can be negative and irrational, so feel free to express any thought that comes to you. </p>
+
+                        <div className="formm">
+                        <div>
+                            <textarea className="inputtt" placeholder="Example: 'I am not good enough for this job' " value={values.AutomaticThought} onChange={handleChange('AutomaticThought')} />
+                              <br></br><br></br>
+                            <button className="signin_button" onClick={this.continue} >Next</button>
+                        </div>
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div>
+        </div>
+      );
+  }
+}
+
+export default Atc1;
+
+
+
+
+
+{/* <div className="signin_new_body">
           <div className="container signin_container" id="container">
               <div className="signin_form-container signin_sign-up-container">
                   
@@ -42,9 +76,4 @@ export class Atc1 extends Component {
                   </div>
               </div>
           </div>
-          </div>
-    );
-  }
-}
-
-export default Atc1;
+          </div> */}

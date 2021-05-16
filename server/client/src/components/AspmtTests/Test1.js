@@ -1,6 +1,9 @@
 import React, { useContext, useState, useEffect } from 'react'
 import {Link, useHistory} from 'react-router-dom';
 import { Questionaire } from './'
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+toast.configure()
 
 function Test1(TestData) {
     const[questions, setQuestions] = useState([]);
@@ -60,10 +63,10 @@ function Test1(TestData) {
         }).then(res=>res.json())
         .then(data=>{
             if(data.error){
-                alert(data.error)
+                toast.warn(data.error, {position: toast.POSITION.TOP_CENTER})
             }
             else{
-                alert("Score stored")
+                toast.success("Test Completed, Please check your mail for the report.", {position: toast.POSITION.TOP_CENTER})
                 history.push('/student')
             }
         }).catch(err=>{
@@ -72,6 +75,7 @@ function Test1(TestData) {
     }
 
     return questions.length > 0 ? (
+        <main>
         <div className="admin__container">
             {currentIndex >= questions.length ? (
                 <div className="atc_charts">
@@ -84,7 +88,7 @@ function Test1(TestData) {
                                 <br></br>
                                 <h3>{result[score].info}</h3>
                                 <br></br><br></br>
-                                <button className="signin_button" onClick={()=>storeScore()}>Go To Dashboard</button>
+                                <button className="signin_button" onClick={()=>storeScore()}>Submit Test</button>
                             </div>
                             <i className="fa fa-usd" aria-hidden="true"></i>
                         </div>
@@ -103,6 +107,7 @@ function Test1(TestData) {
                 index = {currentIndex} />
             )}
         </div>
+        </main>
     ) : (
             <h1>We are loading..</h1>
     );

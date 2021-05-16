@@ -5,7 +5,7 @@ const CBTLessons = () => {
     const history = useHistory()
     return (
     <div>
-        <div className="exercise_body">
+        <div className="exercise_body" style={{paddingTop: "60px"}}>
             <div className="exercise_container">
 
                 <Link to="/cbtlessons/1_1">
@@ -13,7 +13,7 @@ const CBTLessons = () => {
                         <div className="exercise_box">
                             <div className="exercise_content">
                                 <h2>01</h2>
-                                <h3>Introduction</h3>
+                                <h3>Introduction to CBT</h3>
                                 <br></br>
                                 <p>Learn more about Cognitive Behavioral Therapy and how it can help you!</p>
                                 <a>Learn More</a>
@@ -41,7 +41,7 @@ const CBTLessons = () => {
                         <div className="exercise_box">
                             <div className="exercise_content">
                                 <h2>03</h2>
-                                <h3>Belief System</h3>
+                                <h3>Belief System and Core Beliefs</h3>
                                 <br></br>
                                 <p>Learn and understand more about Core Beliefs in Cognitive Behavioral Therapy!</p>
                                 <a>Learn More</a>
@@ -57,7 +57,7 @@ const CBTLessons = () => {
                                 <h2>04</h2>
                                 <h3>Problems, Solutions and Goals</h3>
                                 <br></br>
-                                <p>Learn and understand how goals and objectives can help in improving mental health! </p>
+                                <p>Learn and understand how goals can help in improving mental health! </p>
                                 <a>Learn More</a>
                             </div>
                         </div>
@@ -83,9 +83,9 @@ const CBTLessons = () => {
                         <div className="exercise_box">
                             <div className="exercise_content">
                                 <h2>06</h2>
-                                <h3>Dealing with Setbacks</h3>
+                                <h3>Dealing with Setbacks and Hindrances</h3>
                                 <br></br>
-                                <p>Try and understand more about how to deal with setbacks! </p>
+                                <p>Try and understand more about how to deal with setbacks and hindrances </p>
                                 <a>Learn More</a>
                             </div>
                         </div>
@@ -95,9 +95,9 @@ const CBTLessons = () => {
             </div>
         </div>
 
-        <nav className="footer">
-            <p>From: </p> &nbsp;Resiliens Inc, n.d. CBT Companion App. Resiliens Service.
-        </nav>
+        <div className="col-3">
+            <p>From: &nbsp;Resiliens Inc, n.d. CBT Companion App. Resiliens Service. </p>
+        </div>
     </div>
     )
 }

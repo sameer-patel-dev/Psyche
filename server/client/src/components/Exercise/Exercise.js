@@ -16,7 +16,7 @@ const Exercise = ()=> {
                         <h2>01</h2>
                         <h3>Cognitive Mental Health Tests</h3>
                         <br></br>
-                        <p>Verified Cognitive Mental Health Tests including of PHQ-9, GAD-7, OCI-R, EBPS, ISI.</p>
+                        <p>Verified Cognitive Mental Health Tests including of PHQ-9, GAD-7, OCI-R, ISI.</p>
                         <a>Take Tests Now!</a>
                     </div>
                 </div>
@@ -29,10 +29,10 @@ const Exercise = ()=> {
                 <div className="exercise_box">
                     <div className="exercise_content">
                         <h2>02</h2>
-                        <h3>Automatic Thoughts</h3>
+                        <h3>Automatic Thoughts Challenges</h3>
                         <br></br>
-                        <p>Recognize and Challenge your automatic thoughts by expressing yourself and challenging yourself! </p>
-                        <a>Challenge your Thoughts!</a>
+                        <p>Recognize and Challenge your automatic thoughts by expressing yourself</p>
+                        <a>Challenge now!</a>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@ const Exercise = ()=> {
                 <div className="exercise_box">
                     <div className="exercise_content">
                         <h2>03</h2>
-                        <h3>Deep Breathing Therapy</h3>
+                        <h3>Deep Breathing Therapy Session</h3>
                         <br></br>
                         <p>Calm down yourself and relieve stress using Deep Breathing Techniques.</p>
                         <a>Deep Breaths now!</a>

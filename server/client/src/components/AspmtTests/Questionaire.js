@@ -20,7 +20,7 @@ const Questionaire = ({
                     <div className="charts__right">        
                         <div className="charts__right__title">
                             <div>
-                                <h1>Q{index+1}. {question}</h1>
+                                <h3>Q{index+1}. {question}</h3>
                             </div>
                             <i className="fa fa-usd" aria-hidden="true"></i>
                         </div>
@@ -42,17 +42,21 @@ const Questionaire = ({
                                     </div>
                                 );
                             })}
-
+                        </div>
+                        <div className="charts_right_cards">
                             {showAnswers && (
-                                <button className="signin_buttonn" type="button" onClick = {handleNextQuestion}>Next</button>
+                                <div style={{margin: "auto", marginTop: "20px"}}>
+                                    <button className="signin_button" type="button" onClick = {handleNextQuestion}>Next</button>
+                                </div>
+                                
                             )}
                         </div>    
                     </div>
                 </div>
             </div>
-            <nav className="footer">
-                From, &nbsp; {reference}
-            </nav>
+            <div className="col-3">
+                <p>From, &nbsp; {reference} </p>
+            </div>
         </div>
                 
 )};

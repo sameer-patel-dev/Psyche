@@ -9,7 +9,38 @@ const Join = () => {
     const [room, setRoom] = useState('')
 
     return (
-        <div className="signin_new_body">
+        <div className="admin__container">
+          <div className="atc_charts">
+              
+              <div className="charts__left">
+                  
+                  <div>
+                        <h1>Join a Chatroom!</h1>
+                        
+
+                        <div className="formm">
+                        <div>
+                            <input className="inputtt" type="text"  style = {{marginTop: "2%"}} placeholder="Name" onChange={(event)=> setName(event.target.value)}/>
+                            <input className="inputtt" type="text" style = {{marginTop: "2%"}} placeholder="Room" onChange={(event)=> setRoom(event.target.value)}/>
+                            <br></br> <br></br>
+                            <Link onClick={event => (!name || !room) ? event.preventDefault() : null} to={`/chat?name=${name}&room=${room}`}><button className="signin_button">Join</button></Link>
+                        </div>
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div>
+        </div>
+    )
+}
+
+export default Join
+
+
+
+{/* <div className="signin_new_body">
         <div className="container signin_container" id="container">
             <div className="signin_form-container signin_sign-up-container">
                 <div className="signin_form">
@@ -54,8 +85,4 @@ const Join = () => {
                 </div>
             </div>
         </div>
-    </div>
-    )
-}
-
-export default Join
+    </div> */}

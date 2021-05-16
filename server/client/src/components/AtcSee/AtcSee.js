@@ -31,8 +31,7 @@ const AtcSee = ()=> {
 
                                 <div className="charts__right__title">
                                     <div>
-                                        <h1>Automatic Though Challenge {i+1} </h1>
-                                        <p>Mental Health Assessments</p>
+                                        <h1>Automatic Thought Challenge {i+1} </h1>
                                     </div>
                                     <i className="fa fa-usd" aria-hidden="true"></i>
                                 </div>

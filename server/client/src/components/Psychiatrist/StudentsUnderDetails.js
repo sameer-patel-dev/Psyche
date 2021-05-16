@@ -18,38 +18,33 @@ const StudentsUnderDetails = () => {
         })
     },[])
   return (
-  <div className="charts">
+  <div className="atc_charts">
   <div className="charts__left">
       <div className="charts__left__title">
           <div>
               <h1>Your Scheduled Meetings</h1>
-              <p>List of Students</p>
+              <p style={{marginLeft: "-200px"}}>List of Students</p>
           </div>
           <i className="fa fa-usd" aria-hidden="true"></i>
       </div>
       
+      <div className="charts__right__cardss">
       {
             assigndata.map(item=>{
                 return(
-                    <div className="charts__right__cards_test">
+                    
                         <div className="psycheCard">
-                            <h2>{item.s_name}</h2><br/>
-                            <h2>{item.s_email}</h2>
-                        </div> 
-
-                        <div className="psycheCard">
-                            <h2>{item.room_code}</h2><br/>
+                            <h3>{item.s_name}</h3>
+                            <h3>{item.s_email}</h3>
+                            <h3>{item.room_code}</h3>
                             <Link to='/schedule'><button className="signin_button ghost" id="signUp">Schedule</button></Link>
-                            
-                            {/* <Schedule 
-                            s_name = {item.s_name}
-                            s_email = {item.s_email}
-                             /> */}
                         </div>
-                    </div>
+                    
+                    
                 )
             })
         }      
+        </div>
         
 
   </div>
@@ -57,7 +52,7 @@ const StudentsUnderDetails = () => {
         <div className="charts__right__title">
             <div>
                 <h1>Students Under you</h1>
-                <p>Student Details</p>
+                <p style={{marginLeft: "-130px"}}>Student Details</p>
             </div>
             <i className="fa fa-usd" aria-hidden="true"></i>
         </div>
@@ -67,8 +62,8 @@ const StudentsUnderDetails = () => {
             assigndata.map(item=>{
                 return(
                     <div className="card1">
-                            <h2>{item.s_name}</h2>
-                            <h2>{item.s_email}</h2>
+                            <h3>{item.s_name}</h3>
+                            <h3>{item.s_email}</h3>
                     </div> 
                 )
             })

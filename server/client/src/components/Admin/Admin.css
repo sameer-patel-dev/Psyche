@@ -162,6 +162,7 @@ main {
     padding: 25px;
     border-radius: 5px;
     font-size: 14px;
+    width: 100%;
   }
   
   .card3 {
@@ -197,8 +198,6 @@ main {
 
   .graphInfo{
     display: flex;
-    flex-wrap: nowrap;
-    margin: 15px;
     margin-left: 145px;
     
   }

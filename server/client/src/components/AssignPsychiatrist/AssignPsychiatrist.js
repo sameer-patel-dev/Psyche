@@ -1,5 +1,8 @@
 import React,{useState} from 'react';
 import {Link, useHistory} from 'react-router-dom';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+toast.configure()
 
 const AddaPsychiatrist = ()=> {
     const history = useHistory()
@@ -11,12 +14,12 @@ const AddaPsychiatrist = ()=> {
     const postData = ()=>{
         if(!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(p_email))
         {
-            alert("Invalid Psychiatrist Email")
+            toast.warn("Invalid Psychiatrist Email", {position: toast.POSITION.TOP_CENTER})
             return
         }
         if(!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(s_email))
         {
-            alert("Invalid Student Email")
+            toast.warn("Invalid Student Email", {position: toast.POSITION.TOP_CENTER})
             return
         }
         fetch('/assign', {
@@ -34,10 +37,10 @@ const AddaPsychiatrist = ()=> {
         }).then(res=>res.json())
         .then(data=>{
             if(data.error){
-                alert(data.error)
+                toast.warn(data.error, {position: toast.POSITION.TOP_CENTER})
             }
             else{
-                alert("Student has successfully been assigned a Psychiatrist")
+                toast.success("Student has successfully been assigned a Psychiatrist", {position: toast.POSITION.TOP_CENTER})
                 history.push('/admin')
             }
         }).catch(err=>{
@@ -46,7 +49,39 @@ const AddaPsychiatrist = ()=> {
     }
 
     return (
-        <div className="signin_new_body">
+        <div className="admin__container">
+          <div className="atc_charts">
+              
+              <div className="charts__left">
+                  
+                  <div>
+                        <h1>Assign a Psychiatrist!</h1>
+                        
+
+                        <div className="formm">
+                        <div>
+                              <input className="inputtt" type="text" style = {{marginTop: "2%"}} placeholder="Psychiatrist Name" value={p_name} onChange={(e)=>setPName(e.target.value)} />
+                              <input className="inputtt" type="email" style = {{marginTop: "2%"}} placeholder="Psychiatrist Email" value={p_email} onChange={(e)=>setPEmail(e.target.value)} />
+                              <input className="inputtt" type="text" style = {{marginTop: "2%"}} placeholder="Student Name" value={s_name} onChange={(e)=>setSName(e.target.value)} />
+                              <input className="inputtt" type="email" style = {{marginTop: "2%"}} placeholder="Student Email" value={s_email} onChange={(e)=>setSEmail(e.target.value)} />
+                            <br></br><br></br>
+                              <button className="signin_button" onClick={()=>postData()}>Assign</button>
+                        </div>
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div>
+        </div>
+    )
+}
+
+export default AddaPsychiatrist
+
+
+{/* <div className="signin_new_body">
         <div className="container signin_container right-panel-active" id="container">
             <div className="signin_form-container signin_sign-up-container">
                 <div className="signin_form">
@@ -88,8 +123,4 @@ const AddaPsychiatrist = ()=> {
                 </div>
             </div>
         </div>
-    </div>
-    )
-}
-
-export default AddaPsychiatrist
+    </div> */}

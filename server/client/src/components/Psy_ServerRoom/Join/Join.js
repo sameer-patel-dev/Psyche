@@ -37,7 +37,54 @@ const Join = () => {
         <main>
         {
             data.length >= 1 ? (
-                <div className="signin_new_body">
+                <div className="admin__container">
+                    <div className="atc_charts">
+                        
+                        <div className="charts__left">
+                            
+                            <div>
+                                    <h1>Join a Chatroom!</h1>
+                                    
+
+                                    <div className="formm">
+                                    <div>
+                                        <input className="inputtt" type="text" style = {{marginTop: "2%"}} placeholder="Room" onChange={(event)=> setRoom(event.target.value)}/>
+                                        <br></br> <br></br>
+                                        <Link onClick={event => (!name || !room) ? event.preventDefault() : null} to={`/chat?name=${name}&room=${room}`}><button className="signin_button">Join</button></Link>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            ) : (
+                <div className="admin__container">
+          <div className="atc_charts">
+              <div className="charts__right">
+                  <div className="charts__right__title">
+                      <div>
+                          <h1>You have not been assigned a Student yet.</h1>
+                      </div>
+                      <i className="fa fa-usd" aria-hidden="true"></i>
+                  </div>
+              </div> 
+          </div>
+        </div>   
+            )
+
+        }
+        </main>
+        
+    )
+}
+
+export default Join
+
+
+{/* <div className="signin_new_body">
         <div className="container signin_container" id="container">
             <div className="signin_form-container signin_sign-up-container">
                 <div className="signin_form">
@@ -81,26 +128,4 @@ const Join = () => {
                 </div>
             </div>
         </div>
-    </div>
-            ) : (
-                <div className="admin__container">
-          <div className="atc_charts">
-              <div className="charts__right">
-                  <div className="charts__right__title">
-                      <div>
-                          <h1>You have not been assigned a Student yet.</h1>
-                      </div>
-                      <i className="fa fa-usd" aria-hidden="true"></i>
-                  </div>
-              </div> 
-          </div>
-        </div>   
-            )
-
-        }
-        </main>
-        
-    )
-}
-
-export default Join
+    </div> */}

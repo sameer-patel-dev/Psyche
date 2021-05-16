@@ -1,6 +1,9 @@
 import React,{useState, useEffect} from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {Link, useHistory} from 'react-router-dom';
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+toast.configure()
 
 const Schedule = () => {
     const [studentemail, setStudentEmail] = useState("")
@@ -23,10 +26,10 @@ const Schedule = () => {
         }).then(res=>res.json())
         .then(data=>{
             if(data.error){
-                alert(data.error)
+                toast.warn(data.error, {position: toast.POSITION.TOP_CENTER})
             }
             else{
-                alert("Schedule Confirmed")
+                toast.success("Schedule Comfirmed", {position: toast.POSITION.TOP_CENTER})
             }
         }).catch(err=>{
             console.log(err)

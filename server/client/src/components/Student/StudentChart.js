@@ -2,6 +2,9 @@ import React,{useState, useEffect} from 'react'
 import {Link} from 'react-router-dom';
 
 import "../../../node_modules/react-vis/dist/style.css";
+import {AutoSizer, List} from 'react-virtualized';
+import 'react-virtualized/styles.css'; // only needs to be imported once
+
 import {
   XYPlot,
   LineSeries,
@@ -9,8 +12,10 @@ import {
   YAxis,
   VerticalGridLines,
   HorizontalGridLines,
-  LineMarkSeries
+  LineMarkSeries,
+  FlexibleXYPlot
 } from "react-vis";
+
 
 const StudentChart = () => {
   const [data,setData] = useState([])
@@ -20,39 +25,6 @@ const StudentChart = () => {
   const [data4,setData4] = useState([])
 
   
-  // const data1 = [
-  //   { x: 1, y: 27 },
-  //   { x: 6, y: 24 },
-  //   { x: 11, y: 18 },
-  //   { x: 16, y: 13 },
-  //   { x: 21, y: 10 },
-  // ];
-   
-  
-  // const data2 = [
-  //   { x: 1, y: 20 },
-  //   { x: 6, y: 16 },
-  //   { x: 11, y: 14},
-  //   { x: 16, y: 13 },
-  //   { x: 21, y: 8 },
-  // ];
-
-  // const data3 = [
-  //   { x: 1, y: 33 },
-  //   { x: 6, y: 27},
-  //   { x: 11, y: 25 },
-  //   { x: 16, y: 22 },
-  //   { x: 21, y: 18 },
-  // ];
-
-  // const data4 = [
-  //   { x: 1, y: 6 },
-  //   { x: 6, y: 4 },
-  //   { x: 11, y: 5 },
-  //   { x: 16, y: 4 },
-  //   { x: 21, y: 6 },
-  // ];
-
   useEffect(() => {
     fetch('/studentprofile', {
         headers: {
@@ -79,7 +51,7 @@ const StudentChart = () => {
                   test3 = test3 + 1
                   t3.push({x : parseInt(test3),y: parseInt(score)})
                 }
-                if(testId == 4) {
+                if(testId == 5) {
                   test4 = test4 + 1
                   t4.push({x : parseInt(test4),y: parseInt(score)})
                 }
@@ -96,21 +68,27 @@ const StudentChart = () => {
     <main>
         {
             data.length >= 1 ? (
-              <div style={{ marginTop: "15px" }}>
-                <XYPlot height={400} width={800}  xType="ordinal" yDomain={[0, 54]}>
-                  <VerticalGridLines />
-                  <HorizontalGridLines />
-                  <XAxis title="No. of times test taken"/>
-                  <YAxis title="Test Scores" />
-                  <LineMarkSeries data={data1} color="blue" />
+              <div style={{height: "500px", width:"1350px"}}>
+              <div style={{ height:'100%',width:'100%' }}>
+                  <AutoSizer>
+                      {({ height, width }) => (
+                          <FlexibleXYPlot height={height} width={width} xType="ordinal" yDomain={[0, 54]}>
+                              <VerticalGridLines />
+                              <HorizontalGridLines />
+                              <XAxis title="No. of times test taken"/>
+                              <YAxis title="Test Scores" />
+                              <LineMarkSeries data={data1} color="blue" />
+            
+                              <LineMarkSeries data={data2} color="yellow" />
+            
+                              <LineMarkSeries data={data3} color="red" />
+            
+                              <LineMarkSeries data={data4} color="grey" />
+        
+                        </FlexibleXYPlot>
+                      )}
+                  </AutoSizer>
 
-                  <LineMarkSeries data={data2} color="yellow" />
-
-                  <LineMarkSeries data={data3} color="red" />
-
-                  <LineMarkSeries data={data4} color="grey" />
-
-                </XYPlot>
                 <div className="graphInfo">
                   <div className="colorBox1"></div>
                   <p>PHQ-9</p>
@@ -121,6 +99,7 @@ const StudentChart = () => {
                   <div className="colorBox4"></div>
                   <p>ISI</p>
                 </div>
+              </div>
               </div>
               
             ):

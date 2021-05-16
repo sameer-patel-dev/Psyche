@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-
+import "./Atc.css";
 
 export class Atc4 extends Component {
   continue = e => {
@@ -17,7 +17,40 @@ export class Atc4 extends Component {
     const { values, handleChange } = this.props;
     return (
 
-    <div className="signin_new_body">
+        <div className="admin__container">
+          <div className="atc_charts">
+              
+              <div className="charts__left">
+                  
+                  <div>
+                        <h1>How are you feeling now?!</h1>
+                        <p> Write down your feeling before challenging the idea and afterward. How did questioning the distorted view change your feelings? </p>
+
+                        <div className="formm">
+                        <div>
+                            <textarea className="inputtt" placeholder="Your feelings... " value={values.Feeling} onChange={handleChange('Feeling')} />
+                            <br></br><br></br>
+                            <button className="signin_button" onClick={this.continue} >Next</button>
+                            <br></br>
+                            
+                        </div>
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div>
+        </div>
+    
+    );
+  }
+}
+
+export default Atc4;
+
+
+{/* <div className="signin_new_body">
           <div className="container signin_container" id="container">
               <div className="signin_form-container signin_sign-up-container">
                   <div className="signin_form">
@@ -59,9 +92,4 @@ export class Atc4 extends Component {
                   </div>
               </div>
           </div>
-        </div>
-    );
-  }
-}
-
-export default Atc4;
+        </div> */}

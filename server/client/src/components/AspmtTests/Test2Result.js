@@ -76,13 +76,13 @@ export const Test2Result = [
     },
     {
         id: 15,
-        result: `Anxiety Severity: Severe Anxiety`,
-        info: `This score suggests that you should go for treatment. You should immediately contact a psychiatrist through our platform and have counselling.`
+        result: `Anxiety Severity: Moderate Anxiety`,
+        info: `This score suggests that you should go for treatment. You can go through our CBT Lessons, CBT Exercies and our Virtual Assistant which would help you.`
     },
     {
         id: 16,
-        result: `Anxiety Severity: Severe Anxiety`,
-        info: `This score suggests that you should go for treatment. You should immediately contact a psychiatrist through our platform and have counselling.`
+        result: `Anxiety Severity: Moderate Anxiety`,
+        info: `This score suggests that you should go for treatment. You can go through our CBT Lessons, CBT Exercies and our Virtual Assistant which would help you.`
     },
     {
         id: 17,
@@ -106,6 +106,21 @@ export const Test2Result = [
     },
     {
         id: 21,
+        result: `Anxiety Severity: Severe Anxiety`,
+        info: `This score suggests that you should go for treatment. You should immediately contact a psychiatrist through our platform and have counselling.`
+    },
+    {
+        id: 22,
+        result: `Anxiety Severity: Severe Anxiety`,
+        info: `This score suggests that you should go for treatment. You should immediately contact a psychiatrist through our platform and have counselling.`
+    },
+    {
+        id: 23,
+        result: `Anxiety Severity: Severe Anxiety`,
+        info: `This score suggests that you should go for treatment. You should immediately contact a psychiatrist through our platform and have counselling.`
+    },
+    {
+        id: 24,
         result: `Anxiety Severity: Severe Anxiety`,
         info: `This score suggests that you should go for treatment. You should immediately contact a psychiatrist through our platform and have counselling.`
     }

@@ -57,34 +57,30 @@ const Profile = ()=> {
 
                         <div className="admin__cards">
                             
-                            <div className="card">
-                                <FontAwesomeIcon icon="user" size="2x" style={{ color: '#35a4ba' }}/>
-                                <div className="card__inner">
-                                    <p className="text-primary-p">Name</p>
+                            <div className="student_card">
+                                <div className="student_card__inner">
+                                    <FontAwesomeIcon icon="user" size="2x" style={{ color: '#35a4ba', marginTop: "5px" }}/>
                                     <span className="font-bold text-title">{item.name}</span>
                                 </div>
                             </div>
 
-                            <div className="card">
-                                <FontAwesomeIcon icon="venus-mars" size="2x" style={{ color: '#35a4ba' }}/>
-                                <div className="card__inner">
-                                    <p className="text-primary-p">Gender</p>
+                            <div className="student_card">
+                                <div className="student_card__inner">
+                                    <FontAwesomeIcon icon="venus-mars" size="2x" style={{ color: '#35a4ba' }}/>
                                     <span className="font-bold text-title">{item.gender}</span>
                                 </div>
                             </div>
 
-                            <div className="card">
-                                <FontAwesomeIcon icon="envelope" size="2x" style={{ color: '#35a4ba' }}/>
-                                <div className="card__inner">
-                                    <p className="text-primary-p">Email</p>
+                            <div className="student_card">
+                                <div className="student_card__inner">
+                                    <FontAwesomeIcon icon="envelope" size="2x" style={{ color: '#35a4ba' }}/>
                                     <span className="font-bold text-title">{item.email}</span>
                                 </div>
                             </div>
 
-                            <div className="card">
+                            <div className="student_card">
+                                <div className="student_card__inner">
                                 <FontAwesomeIcon icon="phone" size="2x" style={{ color: '#35a4ba' }}/>
-                                <div className="card__inner">
-                                    <p className="text-primary-p">Phone Number</p>
                                     <span className="font-bold text-title">{item.phoneNo}</span>
                                 </div>
                             </div>
@@ -92,48 +88,54 @@ const Profile = ()=> {
                         </div>
 
 
-                        <div className="charts">
+                        <div className="atc_charts">
                             <div className="charts__left">
                                 <div className="charts__left__title">
                                     <div>
-                                        <h1>Your Progress</h1>
+                                        <h1> Your Progress</h1>
                                         <p>based on Mental Health</p>
                                     </div>
                                     <i className="fa fa-usd" aria-hidden="true"></i>
                                 </div>
-                                <StudentChart />
+                                <div className="charts__right__cards_graph">
+                                    <StudentChart />
+                                </div>
+                                
                                 
                             </div>
 
-                            <div className="charts__right">
-                                <div className="charts__right__title">
+                        </div>
+
+                        <div className="atc_charts">
+                            <div className="charts__left">
+                                <div className="charts__left__title">
                                     <div>
-                                        <h1>Test Reports</h1>
+                                        <h1 style={{marginLeft: "-50px"}}> Test Reports</h1>
                                         <p>Mental Health Assessments</p>
                                     </div>
                                     <i className="fa fa-usd" aria-hidden="true"></i>
                                 </div>
 
 
-                                <div className="charts__right__cards">
-                                    <div className="card1">
-                                        <h2>Patient Health Questionaire</h2><br></br>
-                                        <h2>{score1}</h2>
+                                <div className="charts__right__cardss">
+                                    <div className="carddd1">
+                                        <h3>Patient Health Questionaire</h3>
+                                        <h3>{score1}</h3>
                                     </div>
 
-                                    <div className="card2">
-                                        <h2>Generalized Anxiety Disorder</h2><br></br>
-                                        <h2>{score2}</h2>
+                                    <div className="carddd1">
+                                        <h3>Insomnia Severity Index</h3>
+                                        <h3>{score5}</h3>
                                     </div>
 
-                                    <div className="card3">
-                                        <h2>Obsess Compulsive Inventory</h2><br></br>
-                                        <h2>{score3}</h2>
+                                    <div className="carddd3">
+                                        <h3>Generalized Anxiety Disorder</h3>
+                                        <h3>{score2}</h3>
                                     </div>
 
-                                    <div className="card1">
-                                        <h2>Insomnia Severity Index</h2><br></br>
-                                        <h2>{score5}</h2>
+                                    <div className="carddd3">
+                                        <h3>Obsessesive Compulsive Inventory</h3>
+                                        <h3>{score3}</h3>
                                     </div>
 
                                 </div>
@@ -141,12 +143,12 @@ const Profile = ()=> {
 
                         </div>
 
-                        <Link to='/seeatc'>
-                        <div className="atc_charts">
-                            <div className="charts__right">
-                                <div className="charts__right__title">
-                                    <div>
-                                        <h1>Check my Automatic Thought Challenges</h1>
+                        <Link to='/seeatc' style={{textDecoration: "none"}}>
+                        <div className="atc_charts" style={{textDecoration: "none"}}>
+                            <div className="charts__right" style={{textDecoration: "none"}}>
+                                <div className="charts__right__title" style={{textDecoration: "none"}}>
+                                    <div style={{textDecoration: "none"}}>
+                                        <h1 style={{textDecoration: "none"}}>Check my Automatic Thought Challenges</h1>
                                     </div>
                                     <i className="fa fa-usd" aria-hidden="true"></i>
                                 </div>

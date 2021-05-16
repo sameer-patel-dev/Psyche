@@ -37,34 +37,30 @@ const Psychiatrist = ()=> {
 
                       <div className="admin__cards">
                           
-                          <div className="card">
-                          <FontAwesomeIcon icon="user" size="2x" style={{ color: '#35a4ba' }}/>
-                              <div className="card__inner">
-                                  <p className="text-primary-p">Name</p>
+                          <div className="student_card">
+                              <div className="student_card__inner">
+                              <FontAwesomeIcon icon="user" size="2x" style={{ color: '#35a4ba' }}/>
                                   <span className="font-bold text-title">{item.name}</span>
                               </div>
                           </div>
 
-                          <div className="card">
-                          <FontAwesomeIcon icon="venus-mars" size="2x" style={{ color: '#35a4ba' }}/>
-                              <div className="card__inner">
-                                  <p className="text-primary-p">Gender</p>
+                          <div className="student_card">
+                              <div className="student_card__inner">
+                              <FontAwesomeIcon icon="venus-mars" size="2x" style={{ color: '#35a4ba' }}/>
                                   <span className="font-bold text-title">{item.gender}</span>
                               </div>
                           </div>
 
-                          <div className="card">
-                          <FontAwesomeIcon icon="envelope" size="2x" style={{ color: '#35a4ba' }}/>
-                              <div className="card__inner">
-                                  <p className="text-primary-p">Email</p>
+                          <div className="student_card">
+                              <div className="student_card__inner">
+                              <FontAwesomeIcon icon="envelope" size="2x" style={{ color: '#35a4ba' }}/>
                                   <span className="font-bold text-title">{item.email}</span>
                               </div>
                           </div>
 
-                          <div className="card">
-                          <FontAwesomeIcon icon="phone" size="2x" style={{ color: '#35a4ba' }}/>
-                              <div className="card__inner">
-                                  <p className="text-primary-p">Phone Number</p>
+                          <div className="student_card">
+                              <div className="student_card__inner">
+                              <FontAwesomeIcon icon="phone" size="2x" style={{ color: '#35a4ba' }}/>
                                   <span className="font-bold text-title">{item.phoneNo}</span>
                               </div>
                           </div>

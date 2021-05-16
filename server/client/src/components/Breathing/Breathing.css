@@ -67,6 +67,44 @@
     animation: rotate 9s linear forwards infinite;
     transform-origin: bottom center;
   }
+
+  .Timers {
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #display {
+    margin-bottom: 20px;
+  }
+  #display span {
+    font-size: 36px;
+  }
+  #buttons button:nth-child(2) {
+    margin-left: 8px;
+  }
+  
+  .breathing_button {
+    font-size: 16px;
+    background-color: rgb(217, 60, 35);
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  
+  .breathing_button:hover {
+    background-color: rgb(173, 47, 28);
+  }
+  
+  .breathing_button:active {
+    background-color: rgb(130, 35, 21);
+  }
+
+  .breathing_button:focus {
+    outline: 0;
+  }
   
   @keyframes rotate {
     from {

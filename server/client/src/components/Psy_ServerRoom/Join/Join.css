@@ -47,8 +47,8 @@
 
 .signin_button {
 	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	border: 1px solid #03a9f4;
+	background-color: #03a9f4;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -64,6 +64,11 @@
 
 .signin_button:focus {
 	outline: none;
+}
+
+.signin_button:hover {
+	background-color: #ff568f;
+	border: 1px solid #ff568f;
 }
 
 .signin_button .ghost {

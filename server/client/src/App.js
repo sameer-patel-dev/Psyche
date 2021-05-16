@@ -1,9 +1,14 @@
 import React,{useEffect,createContext, useReducer, useContext, useState} from 'react';
 import './components/FontawesomeIcons'
+import styled from "styled-components";
 import './App.css'
-import Signup from './components/Signup/Signup'
-import Signin from './components/Signin/Signin'
-import NavBar from './components/navbar/Navbar'
+// import Signup from './components/Signup/Signup'
+// import Signin from './components/Signin/Signin'
+// import NavBar from './components/navbar/Navbar'
+import { Navbar } from "./components/navbar";
+import { AccountBox } from "./components/accountBox";
+
+
 import {BrowserRouter, Route, Switch, useHistory} from 'react-router-dom'
 import Home from './components/Home/Home'
 import Exercise from './components/Exercise/Exercise'
@@ -73,6 +78,18 @@ import Lesson6_1 from './components/CBTLessons/Lesson6/Lesson6_1';
 import Lesson6_2 from './components/CBTLessons/Lesson6/Lesson6_2';
 
 export const UserContext = createContext()
+
+const AppContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0em;
+  padding-bottom: 3em;
+  background-image: linear-gradient(45deg, #b95ce4, #4f29cd);
+`;
 
 const Routing = () =>{
   const history = useHistory()
@@ -166,11 +183,15 @@ const Routing = () =>{
 
 
             <Route path="/signin" exact >
-              <Signin />
+              <AppContainer>
+                  <AccountBox />
+              </AppContainer>
             </Route>
 
             <Route path="/signup" exact >
-              <Signup />
+              <AppContainer>
+                  <AccountBox />
+              </AppContainer>
             </Route>
 
             <Route path="/student" exact >
@@ -294,9 +315,9 @@ function App() {
   return (
     <UserContext.Provider value={{state,dispatch}}>
       <BrowserRouter>
-      <div className="container">
-        <NavBar />
-          <Routing />
+      <div className="App">
+        <Navbar />
+        <Routing />
       </div>
       </BrowserRouter>
     </UserContext.Provider>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import "./Atc.css";
 
 export class Atc3 extends Component {
   continue = e => {
@@ -15,13 +16,42 @@ export class Atc3 extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
-        // <div>
-        //     <input type="text" placeholder="Enter your challenge to this Thought" value={values.YourChallenge} onChange={handleChange('YourChallenge')} />
-        //     <button onClick={this.back}>Back</button>
-        //     <button onClick={this.continue}>Continue</button>
-        // </div>
+        <div className="admin__container">
+          <div className="atc_charts">
+              
+              <div className="charts__left">
+                  
+                  <div>
+                        <h1>Your Alternative Thought!</h1>
+                        <p> Now, if the same situation is given to you again, how will you react differently without bringing any negative emotions. </p>
 
-        <div className="signin_new_body">
+                        <div className="formm">
+                        <div>
+                            <textarea className="inputtt" placeholder="Example: 'It may be partially true, but..' " value={values.AlternativeThought} onChange={handleChange('AlternativeThought')} />
+                            <br></br><br></br>
+                            <button className="signin_button" onClick={this.continue} >Next</button>
+                            <br></br>
+                            
+                        </div>
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div>
+        </div>
+        
+
+        
+    );
+  }
+}
+
+export default Atc3;
+
+
+{/* <div className="signin_new_body">
           <div className="container signin_container" id="container">
               <div className="signin_form-container signin_sign-up-container">
                   <div className="signin_form">
@@ -62,9 +92,4 @@ export class Atc3 extends Component {
                   </div>
               </div>
           </div>
-        </div>
-    );
-  }
-}
-
-export default Atc3;
+        </div> */}

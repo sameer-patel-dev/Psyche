@@ -1,14 +1,15 @@
 import React, {useState, useEffect} from 'react'
 import queryString from 'query-string'
 import io from 'socket.io-client'
-
-
 import TextContainer from '../TextContainer/TextContainer';
 import Messages from '../Messages/Messages';
 import InfoBar from '../InfoBar/InfoBar';
 import Input from '../Input/Input';
-
 import "./Chat.css"
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+
+toast.configure()
 
 let socket;
 
@@ -30,7 +31,7 @@ const Chat = ({ location }) => {
 
         socket.emit('join', {name, room}, (error)=>{
             if(error){
-                alert(error);
+              toast.warn(error, {position: toast.POSITION.TOP_CENTER})
             }
         });
     }, [ENDPOINT, location.search]);

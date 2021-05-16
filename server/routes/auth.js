@@ -28,9 +28,13 @@ const transporter = nodemailer.createTransport(sendgridTransport({
 
 router.post('/signup', (req,res)=>{
     // age, gender, address, profile pic, phoneno
-    const {name,email,password,age,gender,address,phoneNo, role} = req.body
-    if(!email || !name || !password || !age || !gender || !address || !phoneNo){
+    const {name,email,password,gender,phoneNo, role} = req.body
+    if(!email || !name || !password  || !gender || !phoneNo){
         return res.status(422).json({error:"Please Enter All the Fields"})
+    }
+    if(email.includes("somaiya.edu"))
+    {
+        return res.status(422).json({error:"Please use your Gmail ID instead of Somaiya"})
     }
     User.findOne({email:email})
         .then((savedUser)=>{
@@ -43,9 +47,7 @@ router.post('/signup', (req,res)=>{
                     name:name,
                     email:email,
                     password:hashedpassword,
-                    age:age,
                     gender:gender,
-                    address:address,
                     phoneNo:phoneNo,
                     role:role
                 })
@@ -121,8 +123,8 @@ router.get('/studentprofile', requireLogin, (req,res)=>{
 
 router.post('/add', requireLogin, (req,res)=>{
     // age, gender, address, profile pic, phoneno
-    const {name,email,password,age,gender,address,phoneNo, role} = req.body
-    if(!email || !name || !password || !age || !gender || !address || !phoneNo){
+    const {name,email,password, gender,phoneNo, role} = req.body
+    if(!email || !name || !password || !gender  || !phoneNo){
         return res.status(422).json({error:"Please Enter All the Fields"})
     }
     User.findOne({email:email})
@@ -136,9 +138,7 @@ router.post('/add', requireLogin, (req,res)=>{
                     name:name,
                     email:email,
                     password:hashedpassword,
-                    age:age,
                     gender:gender,
-                    address:address,
                     phoneNo:phoneNo,
                     role:role
                 })
@@ -273,6 +273,8 @@ router.get('/allatc', requireLogin, (req,res)=>{
     })
 })
 
+
+
 router.get('/allusers', requireLogin, (req,res)=>{
     User.find()
     .then(details=>{
@@ -321,6 +323,7 @@ router.get('/studentroom', requireLogin, (req,res)=>{
 
 router.post('/requestPsych', requireLogin, (req,res)=>{
     Request.findOne({takenBy: req.user})
+    .populate("takenBy", "_id name email")
     .then((savedUser) => {
         if(savedUser) {
             return res.status(422).json({error:"Request for a Psychiatrist has already been sent!"})
