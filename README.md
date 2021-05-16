@@ -66,3 +66,16 @@ Psyche is an intelligent system which helps all school or college going adolesce
 ![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/21.png)
 ![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/22.png)
 
+<hr >
+
+## Contributors
+ - Sameer Patel
+ - Mittal Jain
+ - Sarvesh Pai
+ - Jignesh Nagda
+
+
+## Acknowledgement
+We would like to thank Prof. Manjitsing Valvi, Prof. Ashwini Dalvi and Dr. Shrirang Joshi for the support and guidance throughout the development of the Project.
+
+
