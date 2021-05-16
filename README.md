@@ -44,5 +44,20 @@ Psyche is an intelligent system which helps all school or college going adolesce
 
 
 
+<hr >
+
+
 ### Psychiatrist Module
+
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/15.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/16.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/17.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/18.png)
+![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/19.png)
+
+
+
+
+
+
 ### Admin Module
