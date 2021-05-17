@@ -1,6 +1,6 @@
 # Psyche - Mental Health Application
 
-Psyche is an intelligent system which helps all school or college going adolescents deal with Exam Stress by exploring various mental disorder parameters and overcoming it by Cognitive Behavioral Therapy(CBT) technique and also creates an awareness by educating them about Cognitive Behavioral Therapy.
+Psyche is an intelligent system which helps all school or college going adolescents deal with Exam Stress by exploring various mental disorder parameters and overcoming it by CBT technique and also creates an awareness by educating them about Cognitive Behavioural Therapy.
 
 ## Features 
 
@@ -67,6 +67,7 @@ Psyche is an intelligent system which helps all school or college going adolesce
 ![Responsice Mockup](https://github.com/sameer-patel-dev/Psyche-Mental-Health-Application/blob/master/images/22.png)
 
 <hr >
+
 
 ## Contributors
  - Sameer Patel
