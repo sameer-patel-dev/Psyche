@@ -2,6 +2,14 @@
 
 Psyche is an intelligent system which helps all school or college going adolescents to deal with Exam Stress by exploring various mental disorder parameters and overcoming it by CBT techniques. It also creates an awareness by educating them about Cognitive Behavioural Therapy.
 
+## Technology Stack
+  - NodeJS
+  - ExpressJS
+  - ReactJS
+  - Redux
+  - MongoDB Atlas
+  - IBM Watson
+
 ## Features 
 
 ### Student Module
